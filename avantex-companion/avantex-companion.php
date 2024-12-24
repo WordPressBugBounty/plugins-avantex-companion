@@ -7,10 +7,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 * Plugin Name:  Avantex Companion
 * Plugin URI:   https://wordpress.org/plugins/avantex-companion
 * Description:  Avantex Companion plugin provides themes extra settings for theme avantex.
-* Version:      0.2.3
+* Version:      0.2.4
 * Author:       FARAZFRANK
 * Author URI:   https://avantex.com/
-* Tested up to: 6.2
+* Tested up to: 6.7
 * Requires:     4.0 or higher
 * License:      GPLv3 or later
 * License URI:  http://www.gnu.org/licenses/gpl-3.0.html

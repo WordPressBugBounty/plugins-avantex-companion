@@ -194,18 +194,22 @@ if ( ! function_exists( 'avantex_starter_sites_after_import_mods' ) ) {
 add_action( 'ocdi/after_import', 'avantex_starter_sites_after_import_mods' );
 
 
-// Custom CSS for OCDI plugin.
-function avantex_starter_sites_ocdi_css() { ?>
-	<style >
-		.ocdi__gl-item:nth-child(n+3) .ocdi__gl-item-buttons .button-primary, .ocdi .ocdi__theme-about, .ocdi__intro-text {
-			display: none;
-		}
-		.ocdi__gl-item-image-container::after {
-			padding-top: 75% !important;
-		}
-
-	</style>
-	<?php
+function avantex_starter_sites_ocdi_css() {
+    // Check if it's an admin page and not the Customizer.
+    if (is_admin() && !is_customize_preview()) {
+        ?>
+        <style>
+            .ocdi__gl-item:nth-child(n+3) .ocdi__gl-item-buttons .button-primary, 
+            .ocdi .ocdi__theme-about, 
+            .ocdi__intro-text {
+                display: none;
+            }
+            .ocdi__gl-item-image-container::after {
+                padding-top: 75% !important;
+            }
+        </style>
+        <?php
+    }
 }
 add_action( 'admin_enqueue_scripts', 'avantex_starter_sites_ocdi_css' );
 
