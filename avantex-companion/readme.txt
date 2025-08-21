@@ -3,8 +3,9 @@ Contributors: FARAZFRANK
 Tags: frontpage, theme page, featured, widgets, admin, companion, homepage, WordPress frontpage, template, theme builder, page builder
 PHP Requires at least: 4.0
 Tested up to: 6.7
-Stable tag: 0.2.4
-Requires PHP: 7.4 tested up to 8.0.6
+Stable tag: 0.2.5
+Requires PHP: 7.4 
+tested up to 6.8
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -20,6 +21,9 @@ The plugin options are user-friendly and you can use this plugin for all avantex
 Have any queries?
 
 == Changelog ==
+* Version: 	0.2.5
+	* New Plugin Added
+
 * Version: 	0.2.4
 	* Fixed Admin Panel Css Code in Setup.php
 

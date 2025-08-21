@@ -252,6 +252,11 @@ function avantex_starter_sites_register_plugins( $plugins ) {
 			'slug'     => 'customizer-login-page',
 			'required' => true,
 		),
+		array(
+			'name'     => 'Lead Generation Form',
+			'slug'     => 'lead-generation-form',
+			'required' => true,
+		),
 	);
 
 	return array_merge( $plugins, $theme_plugins );
