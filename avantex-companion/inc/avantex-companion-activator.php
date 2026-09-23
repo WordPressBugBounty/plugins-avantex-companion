@@ -36,12 +36,11 @@ class Avantex_Companion_Activator {
 					$page_option = 'page_for_posts';
 					$template    = 'page.php';
 				endif;
-				$post_data = wp_insert_post( $post_data, false );
-				if ( $post_data ) {
-					update_post_meta( $post_data, '_wp_page_template', $template );
-					$page = get_page_by_title( $page );
+				$post_id = wp_insert_post( $post_data, false );
+				if ( $post_id && ! is_wp_error( $post_id ) ) {
+					update_post_meta( $post_id, '_wp_page_template', $template );
 					update_option( 'show_on_front', 'page' );
-					update_option( $page_option, $page->ID );
+					update_option( $page_option, $post_id );
 				}
 			}
 			update_option( 'fresh_website_activate', true );

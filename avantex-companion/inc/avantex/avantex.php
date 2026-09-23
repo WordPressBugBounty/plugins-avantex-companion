@@ -40,3 +40,8 @@ if ( ! function_exists( 'avantex_avantex_frontpage_sections' ) ) :
 	}
 	add_action( 'avantex_frontpage', 'avantex_avantex_frontpage_sections' );
 endif;
+
+// Load Demo Content & OCDI Setup.
+if ( file_exists( AVANTEX_COMPANION_PLUGIN_DIR . 'inc/avantex/demo-content/setup.php' ) ) {
+	require_once AVANTEX_COMPANION_PLUGIN_DIR . 'inc/avantex/demo-content/setup.php';
+}

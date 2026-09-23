@@ -2,8 +2,8 @@
 Contributors: FARAZFRANK
 Tags: frontpage, theme page, featured, widgets, admin, companion, homepage, WordPress frontpage, template, theme builder, page builder
 PHP Requires at least: 4.0
-Tested up to: 6.7
-Stable tag: 0.2.5
+Tested up to: 7.1.2
+Stable tag: 0.2.6
 Requires PHP: 7.4 
 tested up to 6.8
 License: GPLv3 or later
@@ -21,6 +21,12 @@ The plugin options are user-friendly and you can use this plugin for all avantex
 Have any queries?
 
 == Changelog ==
+* Version: 	0.2.6
+	* Integrated native custom demo importer, exporter, and extras modules for ReAvantex child theme.
+	* Added dedicated ReAvantex Services and Footer menu generation.
+	* Added automatic page template migration and default content provisioning.
+	* Enhanced widget and menu location binding upon demo import.
+
 * Version: 	0.2.5
 	* New Plugin Added
 

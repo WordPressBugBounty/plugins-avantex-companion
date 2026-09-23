@@ -1,0 +1,1030 @@
+# Copyright (C) 2026 WP Frank
+# This file is distributed under the GNU General Public License v3 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Avantex Companion 0.2.6\n"
+"Report-Msgid-Bugs-To: https://wpfrank.com/\n"
+"POT-Creation-Date: 2026-08-31 05:49+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2026-YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+
+#: inc/avantex/demo-content/setup.php:33
+#: inc/reavantex/custom-importer/importer-template.php:19
+msgid "Avantex Business"
+msgstr ""
+
+#: inc/avantex/demo-content/setup.php:42
+#: inc/reavantex/custom-importer/importer-template.php:26
+msgid "Avantex Market"
+msgstr ""
+
+#: inc/avantex/demo-content/setup.php:51
+#: inc/reavantex/custom-importer/importer-template.php:33
+msgid "Avantex Pro"
+msgstr ""
+
+#: inc/avantex/demo-content/setup.php:57
+#: inc/reavantex/custom-importer/importer-template.php:40
+msgid "Avantex Automobile"
+msgstr ""
+
+#: inc/avantex/demo-content/setup.php:63
+#: inc/reavantex/custom-importer/importer-template.php:47
+msgid "Avantex Yoga"
+msgstr ""
+
+#: inc/avantex/demo-content/setup.php:69
+#: inc/reavantex/custom-importer/importer-template.php:54
+msgid "Avantex Metaverse"
+msgstr ""
+
+#: inc/avantex/demo-content/setup.php:75
+#: inc/reavantex/custom-importer/importer-template.php:61
+msgid "Avantex Medical"
+msgstr ""
+
+#: inc/avantex/demo-content/setup.php:81
+#: inc/reavantex/custom-importer/importer-template.php:68
+msgid "Avantex Construction"
+msgstr ""
+
+#: inc/avantex/demo-content/setup.php:87
+#: inc/reavantex/custom-importer/importer-template.php:75
+msgid "Avantex Education"
+msgstr ""
+
+#: inc/avantex/demo-content/setup.php:225
+msgid "Avantex Demo Import"
+msgstr ""
+
+#: inc/avantex/demo-content/setup.php:226
+msgid "Avantex Starter Sites"
+msgstr ""
+
+#: inc/avantex/front-page/index-news.php:69
+msgid "Read More"
+msgstr ""
+
+#: inc/avantex-companion-activator.php:23
+#: inc/reavantex/default-content.php:29
+#: inc/reavantex/default-content.php:152
+#: inc/reavantex/default-content.php:206
+msgid "Home"
+msgstr ""
+
+#: inc/avantex-companion-activator.php:23
+#: inc/reavantex/default-content.php:35
+#: inc/reavantex/default-content.php:172
+msgid "Blog"
+msgstr ""
+
+#: inc/reavantex/custom-extras/extras-page.php:31
+#: inc/reavantex/custom-extras/extras-page.php:32
+#: inc/reavantex/custom-extras/extras-template.php:26
+msgid "ReAvantex Extras"
+msgstr ""
+
+#: inc/reavantex/custom-extras/extras-page.php:421
+msgid "Install Now"
+msgstr ""
+
+#: inc/reavantex/custom-extras/extras-page.php:426
+#: inc/reavantex/custom-extras/extras-page.php:548
+msgid "Update Now"
+msgstr ""
+
+#: inc/reavantex/custom-extras/extras-page.php:434
+#: inc/reavantex/custom-extras/extras-page.php:551
+msgid "Active"
+msgstr ""
+
+#: inc/reavantex/custom-extras/extras-page.php:438
+#: inc/reavantex/custom-extras/extras-page.php:555
+msgid "Activate"
+msgstr ""
+
+#: inc/reavantex/custom-extras/extras-page.php:456
+#: inc/reavantex/custom-extras/extras-page.php:580
+msgid "Downloads:"
+msgstr ""
+
+#: inc/reavantex/custom-extras/extras-page.php:457
+#: inc/reavantex/custom-extras/extras-page.php:581
+msgid "Version:"
+msgstr ""
+
+#: inc/reavantex/custom-extras/extras-page.php:464
+#: inc/reavantex/custom-extras/extras-page.php:588
+msgid "Updated: %s"
+msgstr ""
+
+#: inc/reavantex/custom-extras/extras-page.php:559
+msgid "Install Free"
+msgstr ""
+
+#: inc/reavantex/custom-extras/extras-page.php:575
+msgid "Child theme of %s"
+msgstr ""
+
+#: inc/reavantex/custom-extras/extras-page.php:600
+msgid "Pro Demo"
+msgstr ""
+
+#: inc/reavantex/custom-extras/extras-page.php:603
+msgid "Buy Now"
+msgstr ""
+
+#: inc/reavantex/custom-extras/extras-page.php:624
+#: inc/reavantex/custom-extras/extras-page.php:654
+#: inc/reavantex/custom-importer/class-avantex-demo-exporter.php:73
+#: inc/reavantex/custom-importer/class-avantex-demo-exporter.php:213
+#: inc/reavantex/custom-importer/class-avantex-demo-importer.php:200
+#: inc/reavantex/custom-importer/class-avantex-demo-importer.php:255
+#: inc/reavantex/custom-importer/class-avantex-demo-importer.php:324
+#: inc/reavantex/custom-importer/class-avantex-demo-importer.php:457
+#: inc/reavantex/custom-importer/class-avantex-demo-importer.php:523
+#: inc/reavantex/custom-importer/class-avantex-demo-importer.php:548
+#: inc/reavantex/custom-importer/class-avantex-demo-importer.php:573
+#: inc/reavantex/custom-importer/class-avantex-theme-reset.php:210
+#: inc/reavantex/custom-importer/class-avantex-theme-reset.php:247
+msgid "Permission denied."
+msgstr ""
+
+#: inc/reavantex/custom-extras/extras-page.php:708
+msgid "Plugin installed. Activation failed — please activate manually."
+msgstr ""
+
+#: inc/reavantex/custom-extras/extras-page.php:711
+msgid "Plugin installed and activated."
+msgstr ""
+
+#: inc/reavantex/custom-extras/extras-page.php:733
+msgid "Plugin updated successfully."
+msgstr ""
+
+#: inc/reavantex/custom-extras/extras-page.php:752
+msgid "Plugin activated successfully."
+msgstr ""
+
+#: inc/reavantex/custom-extras/extras-page.php:790
+msgid "Theme installed successfully."
+msgstr ""
+
+#: inc/reavantex/custom-extras/extras-page.php:812
+msgid "Theme updated successfully."
+msgstr ""
+
+#: inc/reavantex/custom-extras/extras-page.php:825
+msgid "Theme activated successfully."
+msgstr ""
+
+#: inc/reavantex/custom-extras/extras-template.php:16
+msgid "Loading"
+msgstr ""
+
+#: inc/reavantex/custom-extras/extras-template.php:19
+msgid "Fetching Our Dedicated Work from WordPress"
+msgstr ""
+
+#: inc/reavantex/custom-extras/extras-template.php:20
+msgid "Loading plugin & theme data — this may take a moment, please wait…"
+msgstr ""
+
+#: inc/reavantex/custom-extras/extras-template.php:27
+msgid "Thanks for choosing ReAvantex. Explore our recommended plugins and themes!"
+msgstr ""
+
+#: inc/reavantex/custom-extras/extras-template.php:37
+msgid "Plugins"
+msgstr ""
+
+#: inc/reavantex/custom-extras/extras-template.php:41
+msgid "Themes"
+msgstr ""
+
+#: inc/reavantex/custom-extras/extras-template.php:49
+msgid "Recommended Plugins"
+msgstr ""
+
+#: inc/reavantex/custom-extras/extras-template.php:61
+msgid "Recommended Themes"
+msgstr ""
+
+#: inc/reavantex/custom-importer/class-avantex-demo-exporter.php:44
+#: inc/reavantex/custom-importer/class-avantex-demo-exporter.php:45
+msgid "ReAvantex Demo Export"
+msgstr ""
+
+#: inc/reavantex/custom-importer/class-avantex-demo-exporter.php:78
+msgid "Please provide a valid demo slug."
+msgstr ""
+
+#: inc/reavantex/custom-importer/class-avantex-demo-exporter.php:200
+msgid "Success! Cleaned demo pack compiled and zipped inside: /demo-content/%1$s/%2$s.zip"
+msgstr ""
+
+#: inc/reavantex/custom-importer/class-avantex-demo-exporter.php:218
+msgid "Invalid demo slug."
+msgstr ""
+
+#: inc/reavantex/custom-importer/class-avantex-demo-exporter.php:224
+msgid "Demo folder deleted successfully."
+msgstr ""
+
+#: inc/reavantex/custom-importer/class-avantex-demo-exporter.php:227
+msgid "Demo folder not found."
+msgstr ""
+
+#: inc/reavantex/custom-importer/class-avantex-demo-exporter.php:481
+msgid "Avantex Premium Demo Exporter"
+msgstr ""
+
+#: inc/reavantex/custom-importer/class-avantex-demo-exporter.php:483
+msgid "Remap, sanitize, and bundle your active local WordPress database, Customizer, and active widgets into production-ready, CDN-aligned demo packs."
+msgstr ""
+
+#: inc/reavantex/custom-importer/class-avantex-demo-exporter.php:487
+msgid "How to use:"
+msgstr ""
+
+#: inc/reavantex/custom-importer/class-avantex-demo-exporter.php:489
+msgid "Enter a unique name/slug for your new demo (e.g. avantex-business)."
+msgstr ""
+
+#: inc/reavantex/custom-importer/class-avantex-demo-exporter.php:490
+msgid "Click Generate Pack. The exporter will automatically export your database, rewrite URLs, bundle Customizer/Widgets, and compress everything into a ZIP file!"
+msgstr ""
+
+#: inc/reavantex/custom-importer/class-avantex-demo-exporter.php:491
+msgid "Upload the resulting [slug].zip file from the demo-content folder to your server."
+msgstr ""
+
+#: inc/reavantex/custom-importer/class-avantex-demo-exporter.php:499
+msgid "Demo Name / Slug (e.g. avantex-corporate)"
+msgstr ""
+
+#: inc/reavantex/custom-importer/class-avantex-demo-exporter.php:504
+msgid "Generate & Save Demo Pack"
+msgstr ""
+
+#: inc/reavantex/custom-importer/class-avantex-demo-exporter.php:512
+msgid "Initializing exporter..."
+msgstr ""
+
+#: inc/reavantex/custom-importer/class-avantex-demo-exporter.php:519
+msgid "Manage Exported Demo Packages"
+msgstr ""
+
+#: inc/reavantex/custom-importer/class-avantex-demo-exporter.php:652
+msgid "No exported demo packages found inside the /demo-content/ folder."
+msgstr ""
+
+#: inc/reavantex/custom-importer/class-avantex-demo-exporter.php:660
+msgid "Demo Slug"
+msgstr ""
+
+#: inc/reavantex/custom-importer/class-avantex-demo-exporter.php:661
+msgid "ZIP Package"
+msgstr ""
+
+#: inc/reavantex/custom-importer/class-avantex-demo-exporter.php:662
+msgid "Size"
+msgstr ""
+
+#: inc/reavantex/custom-importer/class-avantex-demo-exporter.php:663
+msgid "Actions"
+msgstr ""
+
+#: inc/reavantex/custom-importer/class-avantex-demo-exporter.php:676
+msgid "No ZIP compiled"
+msgstr ""
+
+#: inc/reavantex/custom-importer/class-avantex-demo-exporter.php:683
+msgid "Download"
+msgstr ""
+
+#: inc/reavantex/custom-importer/class-avantex-demo-exporter.php:687
+msgid "Delete"
+msgstr ""
+
+#: inc/reavantex/custom-importer/class-avantex-demo-importer.php:98
+#: inc/reavantex/custom-importer/class-avantex-demo-importer.php:99
+#: inc/reavantex/custom-importer/importer-template.php:88
+msgid "ReAvantex Demo Import"
+msgstr ""
+
+#: inc/reavantex/custom-importer/class-avantex-demo-importer.php:138
+#: inc/reavantex/custom-importer/importer-template.php:242
+msgid "Installing and activating required plugins..."
+msgstr ""
+
+#: inc/reavantex/custom-importer/class-avantex-demo-importer.php:139
+msgid "Connecting to raw GitHub CDN and parsing XML content..."
+msgstr ""
+
+#: inc/reavantex/custom-importer/class-avantex-demo-importer.php:141
+msgid "Importing posts, pages, and media files (%s%% completed)..."
+msgstr ""
+
+#: inc/reavantex/custom-importer/class-avantex-demo-importer.php:142
+msgid "Applying Customizer configuration & theme mods..."
+msgstr ""
+
+#: inc/reavantex/custom-importer/class-avantex-demo-importer.php:143
+msgid "Configuring widget areas and sidebar modules..."
+msgstr ""
+
+#: inc/reavantex/custom-importer/class-avantex-demo-importer.php:144
+msgid "Finalizing navigation menu, page mapping, and re-linking..."
+msgstr ""
+
+#: inc/reavantex/custom-importer/class-avantex-demo-importer.php:145
+msgid "Import completed successfully!"
+msgstr ""
+
+#: inc/reavantex/custom-importer/class-avantex-demo-importer.php:146
+msgid "An error occurred during import. Please refresh and try again."
+msgstr ""
+
+#: inc/reavantex/custom-importer/class-avantex-demo-importer.php:245
+msgid "Plugins ready."
+msgstr ""
+
+#: inc/reavantex/custom-importer/class-avantex-demo-importer.php:260
+#: inc/reavantex/custom-importer/class-avantex-demo-importer.php:465
+#: inc/reavantex/custom-importer/class-avantex-demo-importer.php:528
+#: inc/reavantex/custom-importer/class-avantex-demo-importer.php:553
+#: inc/reavantex/custom-importer/class-avantex-demo-importer.php:578
+msgid "Invalid demo selected."
+msgstr ""
+
+#: inc/reavantex/custom-importer/class-avantex-demo-importer.php:285
+msgid "Failed to download demo package. Error: %s"
+msgstr ""
+
+#: inc/reavantex/custom-importer/class-avantex-demo-importer.php:307
+#: inc/reavantex/custom-importer/class-avantex-demo-importer.php:403
+msgid "Failed to extract package. Error: %s"
+msgstr ""
+
+#: inc/reavantex/custom-importer/class-avantex-demo-importer.php:314
+msgid "Demo package deployed successfully."
+msgstr ""
+
+#: inc/reavantex/custom-importer/class-avantex-demo-importer.php:330
+msgid "No file uploaded."
+msgstr ""
+
+#: inc/reavantex/custom-importer/class-avantex-demo-importer.php:338
+msgid "Please upload a valid .zip file."
+msgstr ""
+
+#: inc/reavantex/custom-importer/class-avantex-demo-importer.php:344
+msgid "Invalid ZIP file name slug format."
+msgstr ""
+
+#: inc/reavantex/custom-importer/class-avantex-demo-importer.php:374
+msgid "Failed to upload package."
+msgstr ""
+
+#: inc/reavantex/custom-importer/class-avantex-demo-importer.php:414
+msgid "No XML file found inside the uploaded ZIP package."
+msgstr ""
+
+#: inc/reavantex/custom-importer/class-avantex-demo-importer.php:421
+msgid "Invalid internal XML file name slug format."
+msgstr ""
+
+#: inc/reavantex/custom-importer/class-avantex-demo-importer.php:434
+msgid "Failed to rename the package folder to match the internal slug."
+msgstr ""
+
+#: inc/reavantex/custom-importer/class-avantex-demo-importer.php:443
+msgid "Custom package uploaded and deployed."
+msgstr ""
+
+#: inc/reavantex/custom-importer/class-avantex-demo-importer.php:470
+msgid "Demo XML content file not found."
+msgstr ""
+
+#: inc/reavantex/custom-importer/class-avantex-demo-importer.php:538
+msgid "Customizer settings applied."
+msgstr ""
+
+#: inc/reavantex/custom-importer/class-avantex-demo-importer.php:563
+msgid "Widgets configured."
+msgstr ""
+
+#: inc/reavantex/custom-importer/class-avantex-demo-importer.php:591
+msgid "Import completed!"
+msgstr ""
+
+#: inc/reavantex/custom-importer/class-avantex-demo-importer.php:602
+msgid "XML file not found."
+msgstr ""
+
+#: inc/reavantex/custom-importer/class-avantex-demo-importer.php:612
+msgid "XML file is empty."
+msgstr ""
+
+#: inc/reavantex/custom-importer/class-avantex-demo-importer.php:631
+msgid "Failed to parse XML file."
+msgstr ""
+
+#: inc/reavantex/custom-importer/class-avantex-demo-importer.php:1043
+msgid "Customizer file not found."
+msgstr ""
+
+#: inc/reavantex/custom-importer/class-avantex-demo-importer.php:1053
+msgid "Customizer file is empty."
+msgstr ""
+
+#: inc/reavantex/custom-importer/class-avantex-demo-importer.php:1074
+msgid "Failed to unserialize Customizer data."
+msgstr ""
+
+#: inc/reavantex/custom-importer/class-avantex-demo-importer.php:1100
+msgid "Widget file not found."
+msgstr ""
+
+#: inc/reavantex/custom-importer/class-avantex-demo-importer.php:1110
+msgid "Widget file is empty."
+msgstr ""
+
+#: inc/reavantex/custom-importer/class-avantex-demo-importer.php:1115
+msgid "Failed to decode Widget JSON."
+msgstr ""
+
+#: inc/reavantex/custom-importer/class-avantex-theme-reset.php:236
+msgid "Invalid reset phase."
+msgstr ""
+
+#: inc/reavantex/custom-importer/class-avantex-theme-reset.php:276
+msgid "Backup manifest created."
+msgstr ""
+
+#: inc/reavantex/custom-importer/class-avantex-theme-reset.php:323
+msgid "Deleted %d demo posts, pages, and custom content."
+msgstr ""
+
+#: inc/reavantex/custom-importer/class-avantex-theme-reset.php:347
+msgid "Deleted %d demo media files from server."
+msgstr ""
+
+#: inc/reavantex/custom-importer/class-avantex-theme-reset.php:419
+msgid "Deleted %1$d menu items and %2$d menus."
+msgstr ""
+
+#: inc/reavantex/custom-importer/class-avantex-theme-reset.php:461
+msgid "Deleted %d demo taxonomy terms."
+msgstr ""
+
+#: inc/reavantex/custom-importer/class-avantex-theme-reset.php:475
+msgid "Customizer settings restored to theme defaults."
+msgstr ""
+
+#: inc/reavantex/custom-importer/class-avantex-theme-reset.php:477
+msgid "Customizer settings preserved for other active demos."
+msgstr ""
+
+#: inc/reavantex/custom-importer/class-avantex-theme-reset.php:517
+msgid "Widget areas and sidebar configurations cleared."
+msgstr ""
+
+#: inc/reavantex/custom-importer/class-avantex-theme-reset.php:519
+msgid "Widgets preserved for other active demos."
+msgstr ""
+
+#: inc/reavantex/custom-importer/class-avantex-theme-reset.php:540
+msgid "Reading settings restored to WordPress defaults."
+msgstr ""
+
+#: inc/reavantex/custom-importer/class-avantex-theme-reset.php:542
+msgid "Reading settings preserved."
+msgstr ""
+
+#: inc/reavantex/custom-importer/class-avantex-theme-reset.php:567
+msgid "Cleanup complete. Theme is now in its default state."
+msgstr ""
+
+#: inc/reavantex/custom-importer/importer-template.php:89
+msgid "Transform your site instantly! Import our high-quality premium starter sites in one single click."
+msgstr ""
+
+#: inc/reavantex/custom-importer/importer-template.php:96
+msgid "All Demos"
+msgstr ""
+
+#: inc/reavantex/custom-importer/importer-template.php:97
+msgid "Free Demos"
+msgstr ""
+
+#: inc/reavantex/custom-importer/importer-template.php:98
+msgid "Pro Demos"
+msgstr ""
+
+#: inc/reavantex/custom-importer/importer-template.php:104
+msgid "Upload Custom ZIP"
+msgstr ""
+
+#: inc/reavantex/custom-importer/importer-template.php:111
+msgid "Search starter sites..."
+msgstr ""
+
+#: inc/reavantex/custom-importer/importer-template.php:123
+msgid "Live Preview"
+msgstr ""
+
+#: inc/reavantex/custom-importer/importer-template.php:135
+msgid "Import Demo"
+msgstr ""
+
+#: inc/reavantex/custom-importer/importer-template.php:164
+msgid "Complete Theme Reset"
+msgstr ""
+
+#: inc/reavantex/custom-importer/importer-template.php:165
+msgid "Remove all demo-imported content, media, menus, customizer settings, and widgets. Returns the theme to its fresh-install state. Your own posts, pages, and media that were NOT imported by the theme will be preserved."
+msgstr ""
+
+#: inc/reavantex/custom-importer/importer-template.php:173
+msgid "Posts"
+msgstr ""
+
+#: inc/reavantex/custom-importer/importer-template.php:177
+msgid "Pages"
+msgstr ""
+
+#: inc/reavantex/custom-importer/importer-template.php:181
+msgid "Media"
+msgstr ""
+
+#: inc/reavantex/custom-importer/importer-template.php:185
+msgid "Menus"
+msgstr ""
+
+#: inc/reavantex/custom-importer/importer-template.php:189
+msgid "Total Items"
+msgstr ""
+
+#: inc/reavantex/custom-importer/importer-template.php:196
+msgid "Reset scope:"
+msgstr ""
+
+#: inc/reavantex/custom-importer/importer-template.php:198
+msgid "— All Demos (Full Reset) —"
+msgstr ""
+
+#: inc/reavantex/custom-importer/importer-template.php:208
+msgid "Reset Theme to Default"
+msgstr ""
+
+#: inc/reavantex/custom-importer/importer-template.php:214
+msgid "Your theme is already in its default state. No demo content has been imported."
+msgstr ""
+
+#: inc/reavantex/custom-importer/importer-template.php:225
+msgid "Importing Starter Site"
+msgstr ""
+
+#: inc/reavantex/custom-importer/importer-template.php:227
+msgid "Please keep this window open and do not refresh the page. We are preparing your design step-by-step."
+msgstr ""
+
+#: inc/reavantex/custom-importer/importer-template.php:246
+msgid "Downloading and deploying local demo package..."
+msgstr ""
+
+#: inc/reavantex/custom-importer/importer-template.php:250
+msgid "Importing content and sideloading physical media locally..."
+msgstr ""
+
+#: inc/reavantex/custom-importer/importer-template.php:254
+msgid "Configuring Customizer settings and color architecture..."
+msgstr ""
+
+#: inc/reavantex/custom-importer/importer-template.php:258
+msgid "Mapping widgets and sidebar columns..."
+msgstr ""
+
+#: inc/reavantex/custom-importer/importer-template.php:262
+msgid "Finalizing dynamic menu and static front page allocations..."
+msgstr ""
+
+#: inc/reavantex/custom-importer/importer-template.php:271
+msgid "Congratulations!"
+msgstr ""
+
+#: inc/reavantex/custom-importer/importer-template.php:272
+msgid "Your brand-new starter site is fully loaded and ready to explore."
+msgstr ""
+
+#: inc/reavantex/custom-importer/importer-template.php:275
+#: inc/reavantex/custom-importer/importer-template.php:404
+msgid "View Website"
+msgstr ""
+
+#: inc/reavantex/custom-importer/importer-template.php:277
+msgid "Dismiss"
+msgstr ""
+
+#: inc/reavantex/custom-importer/importer-template.php:292
+msgid "Existing Demo Content Detected"
+msgstr ""
+
+#: inc/reavantex/custom-importer/importer-template.php:297
+msgid "Reset first then continue import"
+msgstr ""
+
+#: inc/reavantex/custom-importer/importer-template.php:300
+msgid "Import on top of existing"
+msgstr ""
+
+#: inc/reavantex/custom-importer/importer-template.php:303
+#: inc/reavantex/custom-importer/importer-template.php:336
+msgid "Cancel"
+msgstr ""
+
+#: inc/reavantex/custom-importer/importer-template.php:320
+msgid "Are you absolutely sure?"
+msgstr ""
+
+#: inc/reavantex/custom-importer/importer-template.php:321
+msgid "This will permanently delete all demo-imported content, media files, customizer settings, menus, and widgets. A backup manifest will be saved before deletion."
+msgstr ""
+
+#: inc/reavantex/custom-importer/importer-template.php:326
+msgid "Type RESET to confirm:"
+msgstr ""
+
+#: inc/reavantex/custom-importer/importer-template.php:333
+msgid "Yes, Reset Everything"
+msgstr ""
+
+#: inc/reavantex/custom-importer/importer-template.php:344
+msgid "Resetting Theme"
+msgstr ""
+
+#: inc/reavantex/custom-importer/importer-template.php:345
+msgid "Please wait while we safely remove demo content and restore defaults..."
+msgstr ""
+
+#: inc/reavantex/custom-importer/importer-template.php:358
+msgid "Creating backup manifest for recovery..."
+msgstr ""
+
+#: inc/reavantex/custom-importer/importer-template.php:362
+msgid "Removing demo posts and pages..."
+msgstr ""
+
+#: inc/reavantex/custom-importer/importer-template.php:366
+msgid "Deleting demo media files from server..."
+msgstr ""
+
+#: inc/reavantex/custom-importer/importer-template.php:370
+msgid "Removing demo navigation menus..."
+msgstr ""
+
+#: inc/reavantex/custom-importer/importer-template.php:374
+msgid "Cleaning up demo taxonomy terms..."
+msgstr ""
+
+#: inc/reavantex/custom-importer/importer-template.php:378
+msgid "Resetting Customizer settings to defaults..."
+msgstr ""
+
+#: inc/reavantex/custom-importer/importer-template.php:382
+msgid "Clearing widget configurations..."
+msgstr ""
+
+#: inc/reavantex/custom-importer/importer-template.php:386
+msgid "Restoring default reading settings..."
+msgstr ""
+
+#: inc/reavantex/custom-importer/importer-template.php:390
+msgid "Final cleanup and cache flush..."
+msgstr ""
+
+#: inc/reavantex/custom-importer/importer-template.php:399
+msgid "Theme Reset Complete!"
+msgstr ""
+
+#: inc/reavantex/custom-importer/importer-template.php:400
+msgid "Your theme has been restored to its default state. All demo content has been safely removed."
+msgstr ""
+
+#: inc/reavantex/custom-importer/importer-template.php:406
+msgid "Done"
+msgstr ""
+
+#: inc/reavantex/default-content.php:41
+#: inc/reavantex/default-content.php:164
+#: inc/reavantex/default-content.php:210
+msgid "About Us"
+msgstr ""
+
+#: inc/reavantex/default-content.php:47
+#: inc/reavantex/default-content.php:156
+#: inc/reavantex/default-content.php:214
+msgid "Services"
+msgstr ""
+
+#: inc/reavantex/default-content.php:53
+#: inc/reavantex/default-content.php:160
+#: inc/reavantex/page-templates/page-portfolio.php:54
+msgid "Portfolio"
+msgstr ""
+
+#: inc/reavantex/default-content.php:59
+#: inc/reavantex/page-templates/page-case-study.php:39
+msgid "Case Study"
+msgstr ""
+
+#: inc/reavantex/default-content.php:65
+#: inc/reavantex/default-content.php:168
+#: inc/reavantex/page-templates/page-faq.php:15
+msgid "FAQ"
+msgstr ""
+
+#: inc/reavantex/default-content.php:71
+#: inc/reavantex/default-content.php:176
+#: inc/reavantex/page-templates/page-faq.php:25
+#: inc/reavantex/page-templates/page-privacy-policy.php:19
+#: inc/reavantex/page-templates/page-services.php:40
+#: inc/reavantex/page-templates/page-terms-of-service.php:19
+msgid "Contact Us"
+msgstr ""
+
+#: inc/reavantex/default-content.php:218
+#: inc/reavantex/page-templates/page-privacy-policy.php:13
+msgid "Privacy Policy"
+msgstr ""
+
+#: inc/reavantex/default-content.php:222
+#: inc/reavantex/page-templates/page-terms-of-service.php:13
+msgid "Terms of Service"
+msgstr ""
+
+#: inc/reavantex/default-content.php:252
+msgid "Web Development"
+msgstr ""
+
+#: inc/reavantex/default-content.php:256
+msgid "UI/UX Design"
+msgstr ""
+
+#: inc/reavantex/default-content.php:260
+msgid "Digital Marketing"
+msgstr ""
+
+#: inc/reavantex/default-content.php:264
+msgid "Brand Strategy"
+msgstr ""
+
+#: inc/reavantex/default-content.php:268
+msgid "Cloud Solutions"
+msgstr ""
+
+#: inc/reavantex/default-content.php:325
+msgid "Search"
+msgstr ""
+
+#: inc/reavantex/default-content.php:329
+msgid "Recent Posts"
+msgstr ""
+
+#: inc/reavantex/default-content.php:335
+msgid "Categories"
+msgstr ""
+
+#: inc/reavantex/default-content.php:352
+msgid "Our Services"
+msgstr ""
+
+#: inc/reavantex/default-content.php:383
+msgid "The Future of Web Development: Designing Scalable Digital Experiences"
+msgstr ""
+
+#: inc/reavantex/default-content.php:388
+msgid "Maximizing Brand Impact with Modern Typography and Micro-Interactions"
+msgstr ""
+
+#: inc/reavantex/default-content.php:393
+msgid "Optimizing Performance and Core Web Vitals for E-Commerce Platforms"
+msgstr ""
+
+#: inc/reavantex/page-templates/page-case-study.php:22
+msgid "Featured Project"
+msgstr ""
+
+#: inc/reavantex/page-templates/page-case-study.php:58
+msgid "Featured Project Overview"
+msgstr ""
+
+#: inc/reavantex/page-templates/page-case-study.php:59
+msgid "Portfolio Showcase"
+msgstr ""
+
+#: inc/reavantex/page-templates/page-case-study.php:62
+msgid "Enterprise Client"
+msgstr ""
+
+#: inc/reavantex/page-templates/page-case-study.php:68
+msgid "Consolidated complex user workflows into an intuitive interface, eliminating cognitive load and task friction."
+msgstr ""
+
+#: inc/reavantex/page-templates/page-case-study.php:69
+msgid "Designed a modern component system with real-time data flow, clear visual hierarchy, and fast page load speeds."
+msgstr ""
+
+#: inc/reavantex/page-templates/page-case-study.php:70
+msgid "Delivered outstanding user adoption lift, reduced task completion times by 45%, and achieved 99% client satisfaction."
+msgstr ""
+
+#: inc/reavantex/page-templates/page-faq.php:16
+msgid "Frequently Asked Questions"
+msgstr ""
+
+#: inc/reavantex/page-templates/page-faq.php:17
+msgid "Find answers to the most commonly asked questions below. If you cannot find what you are looking for, feel free to contact us."
+msgstr ""
+
+#: inc/reavantex/page-templates/page-faq.php:23
+msgid "Still have questions?"
+msgstr ""
+
+#: inc/reavantex/page-templates/page-faq.php:24
+msgid "We are here to help. Reach out to our team for personalized assistance."
+msgstr ""
+
+#: inc/reavantex/page-templates/page-portfolio.php:18
+msgid "Portfolio & Case Studies"
+msgstr ""
+
+#: inc/reavantex/page-templates/page-portfolio.php:19
+msgid "Innovative Projects Built with Excellence"
+msgstr ""
+
+#: inc/reavantex/page-templates/page-portfolio.php:20
+msgid "Explore our collection of successful projects and digital products. We work closely with our clients to transform ideas into robust, high-performing solutions."
+msgstr ""
+
+#: inc/reavantex/page-templates/page-portfolio.php:23
+msgid "Interactive Viewer"
+msgstr ""
+
+#: inc/reavantex/page-templates/page-portfolio.php:24
+msgid "In-Depth Project Breakdown"
+msgstr ""
+
+#: inc/reavantex/page-templates/page-portfolio.php:25
+msgid "Viewing full details for selected project"
+msgstr ""
+
+#: inc/reavantex/page-templates/page-portfolio.php:46
+msgid "Featured Works"
+msgstr ""
+
+#: inc/reavantex/page-templates/page-portfolio.php:47
+msgid "Our Projects & Case Studies"
+msgstr ""
+
+#: inc/reavantex/page-templates/page-portfolio.php:69
+msgid "Primary Performance Metric"
+msgstr ""
+
+#: inc/reavantex/page-templates/page-portfolio.php:71
+msgid "Task Friction Reduction"
+msgstr ""
+
+#: inc/reavantex/page-templates/page-portfolio.php:122
+msgid "Our Metrics"
+msgstr ""
+
+#: inc/reavantex/page-templates/page-portfolio.php:123
+msgid "Numbers That Represent Our Success"
+msgstr ""
+
+#: inc/reavantex/page-templates/page-portfolio.php:131
+msgid "Have a Project in Mind? Let’s Build Something Amazing Together"
+msgstr ""
+
+#: inc/reavantex/page-templates/page-portfolio.php:132
+msgid "Partner with our expert design and engineering team to bring your digital vision to life."
+msgstr ""
+
+#: inc/reavantex/page-templates/page-portfolio.php:133
+msgid "Start a Project Inquiry"
+msgstr ""
+
+#: inc/reavantex/page-templates/page-privacy-policy.php:12
+#: inc/reavantex/page-templates/page-terms-of-service.php:12
+msgid "Legal"
+msgstr ""
+
+#: inc/reavantex/page-templates/page-privacy-policy.php:17
+msgid "Have questions about our privacy policies?"
+msgstr ""
+
+#: inc/reavantex/page-templates/page-privacy-policy.php:18
+msgid "If you have any questions or concerns about our privacy policy, please do not hesitate to contact us."
+msgstr ""
+
+#: inc/reavantex/page-templates/page-privacy-policy.php:52
+#: inc/reavantex/page-templates/page-terms-of-service.php:52
+msgid "Last Updated: %s"
+msgstr ""
+
+#: inc/reavantex/page-templates/page-privacy-policy.php:67
+#: inc/reavantex/page-templates/page-terms-of-service.php:67
+msgid "Table of Contents"
+msgstr ""
+
+#: inc/reavantex/page-templates/page-services.php:22
+msgid "What We Do"
+msgstr ""
+
+#: inc/reavantex/page-templates/page-services.php:23
+msgid "Professional Services Built For Growth"
+msgstr ""
+
+#: inc/reavantex/page-templates/page-services.php:24
+msgid "We combine strategic thinking with technical expertise to deliver digital solutions that drive real business results. Our team of specialists works closely with you to understand your unique challenges and craft tailored solutions."
+msgstr ""
+
+#: inc/reavantex/page-templates/page-services.php:26
+msgid "In-Depth"
+msgstr ""
+
+#: inc/reavantex/page-templates/page-services.php:27
+msgid "Services In Detail"
+msgstr ""
+
+#: inc/reavantex/page-templates/page-services.php:31
+msgid "How It Works"
+msgstr ""
+
+#: inc/reavantex/page-templates/page-services.php:32
+msgid "Our Working Process"
+msgstr ""
+
+#: inc/reavantex/page-templates/page-services.php:37
+msgid "Start Your Project"
+msgstr ""
+
+#: inc/reavantex/page-templates/page-services.php:38
+msgid "Ready to get started?"
+msgstr ""
+
+#: inc/reavantex/page-templates/page-services.php:39
+msgid "Let us help you transform your vision into reality. Our team is ready to discuss your next project."
+msgstr ""
+
+#: inc/reavantex/page-templates/page-terms-of-service.php:17
+msgid "Have questions about our terms?"
+msgstr ""
+
+#: inc/reavantex/page-templates/page-terms-of-service.php:18
+msgid "If you have any questions or concerns about our terms of service, please do not hesitate to contact us."
+msgstr ""
+
+#: inc/reavantex/reavantex.php:124
+msgid "Avantex About-US"
+msgstr ""
+
+#: inc/reavantex/reavantex.php:125
+msgid "Avantex Services"
+msgstr ""
+
+#: inc/reavantex/reavantex.php:126
+msgid "Avantex Portfolio"
+msgstr ""
+
+#: inc/reavantex/reavantex.php:127
+msgid "Avantex Case Study"
+msgstr ""
+
+#: inc/reavantex/reavantex.php:128
+msgid "Avantex FAQ"
+msgstr ""
+
+#: inc/reavantex/reavantex.php:129
+msgid "Avantex Contact-US"
+msgstr ""
+
+#: inc/reavantex/reavantex.php:130
+msgid "Avantex Privacy Policy"
+msgstr ""
+
+#: inc/reavantex/reavantex.php:131
+msgid "Avantex Terms Of Service"
+msgstr ""
+
+#: inc/reavantex/reavantex.php:132
+msgid "Avantex Blog-Template"
+msgstr ""
+

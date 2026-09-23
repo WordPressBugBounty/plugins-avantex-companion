@@ -1,0 +1,501 @@
+/**
+ * Avantex Extras — Admin page styles.
+ *
+ * @package avantex
+ */
+
+/* ─── Variables ─── */
+:root {
+  --avantex-extras-primary: #3c72fc;
+  --avantex-extras-dark: #0f0d1d;
+  --avantex-extras-text: #555;
+  --avantex-extras-light: #f8f9fc;
+  --avantex-extras-border: #e2e6ed;
+  --avantex-extras-success: #22c55e;
+  --avantex-extras-error: #ef4444;
+  --avantex-extras-star: #ffb900;
+  --avantex-extras-radius: 12px;
+  --avantex-extras-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  --avantex-extras-shadow-hover: 0 8px 30px rgba(0, 0, 0, 0.1);
+  --avantex-extras-transition: 0.25s ease;
+  --avantex-extras-demo-bg: linear-gradient(135deg, #222087, #060534);
+  --avantex-extras-buy-bg: linear-gradient(135deg, #5b011e, #b74c42);
+}
+
+/* ─── Full-page loader overlay ─── */
+.avantex-extras-loader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: var(--avantex-extras-radius);
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+.avantex-extras-loader--hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.avantex-extras-loader__inner {
+  text-align: center;
+  max-width: 420px;
+  padding: 40px 30px;
+  animation: avantex-fade-in 0.4s ease;
+}
+
+.avantex-extras-loader__spinner {
+  width: 56px;
+  height: 56px;
+  margin: 0 auto 24px;
+  border: 4px solid var(--avantex-extras-border);
+  border-top-color: var(--avantex-extras-primary);
+  border-right-color: var(--avantex-extras-primary);
+  border-radius: 50%;
+  animation: avantex-loader-spin 0.8s linear infinite;
+}
+
+.avantex-extras-loader__title {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--avantex-extras-dark);
+  margin: 0 0 10px;
+  letter-spacing: -0.3px;
+}
+
+.avantex-extras-loader__text {
+  font-size: 14px;
+  color: var(--avantex-extras-text);
+  margin: 0;
+  line-height: 1.6;
+}
+
+@keyframes avantex-loader-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes avantex-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ─── Layout wrapper ─── */
+.avantex-extras-wrap {
+  position: relative;
+  min-height: 60vh;
+  margin: 20px auto 40px;
+  padding: 0 20px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+/* ─── Page header ─── */
+.avantex-extras-header {
+  text-align: center;
+  padding: 50px 20px 40px;
+  margin-bottom: 10px;
+  background: linear-gradient(135deg, #f8f9fc 0%, #eef1f8 100%);
+  border-radius: var(--avantex-extras-radius);
+  border: 1px solid var(--avantex-extras-border);
+}
+
+.avantex-extras-header h1 {
+  font-size: 42px;
+  font-weight: 700;
+  color: var(--avantex-extras-dark);
+  margin: 0 0 12px;
+  letter-spacing: -1px;
+}
+
+.avantex-extras-subtitle {
+  font-size: 18px;
+  color: var(--avantex-extras-text);
+  margin: 0;
+  font-weight: 400;
+}
+
+/* ─── Notice bar ─── */
+.avantex-extras-notice {
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  animation: avantex-slide-down 0.3s ease;
+}
+
+.avantex-extras-notice--success {
+  background: #f0fdf4;
+  color: #166534;
+  border: 1px solid #bbf7d0;
+}
+
+.avantex-extras-notice--error {
+  background: #fef2f2;
+  color: #991b1b;
+  border: 1px solid #fecaca;
+}
+
+.avantex-extras-notice--info {
+  background: #eff6ff;
+  color: #1e40af;
+  border: 1px solid #bfdbfe;
+}
+
+@keyframes avantex-slide-down {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ─── Tabs Navigation ─── */
+.avantex-extras-tabs-nav {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin: 30px auto;
+  background: rgba(240, 242, 247, 0.8);
+  padding: 6px;
+  border-radius: 30px;
+  border: 1px solid var(--avantex-extras-border);
+  max-width: 320px;
+  backdrop-filter: blur(4px);
+}
+
+.avantex-extras-tab-btn {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--avantex-extras-text);
+  background: transparent;
+  border: none;
+  border-radius: 24px;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.avantex-extras-tab-btn .dashicons {
+  font-size: 20px;
+  width: 20px;
+  height: 20px;
+  transition: transform 0.3s ease;
+}
+
+.avantex-extras-tab-btn:hover {
+  color: var(--avantex-extras-dark);
+}
+
+.avantex-extras-tab-btn:hover .dashicons {
+  transform: translateY(-1px);
+}
+
+.avantex-extras-tab-btn--active {
+  color: #fff;
+  background: var(--avantex-extras-primary);
+  box-shadow: 0 4px 12px rgba(60, 114, 252, 0.25);
+}
+
+.avantex-extras-tab-btn--active:hover {
+  color: #fff;
+}
+
+/* ─── Section titles ─── */
+.avantex-extras-section {
+  display: none;
+  margin-top: 30px;
+}
+
+.avantex-extras-section--active {
+  display: block;
+  animation: avantex-fade-in 0.4s ease;
+}
+
+.avantex-extras-section-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--avantex-extras-dark);
+  margin: 0 0 24px;
+  padding-bottom: 14px;
+  border-bottom: 2px solid var(--avantex-extras-border);
+}
+
+.avantex-extras-section-title .dashicons {
+  font-size: 24px;
+  width: 24px;
+  height: 24px;
+  color: var(--avantex-extras-primary);
+}
+
+/* ─── Card grid ─── */
+.avantex-extras-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(390px, 1fr));
+  gap: 24px;
+}
+
+/* ─── Card ─── */
+.avantex-extras-card {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border: 1px solid var(--avantex-extras-border);
+  border-radius: var(--avantex-extras-radius);
+  box-shadow: var(--avantex-extras-shadow);
+  overflow: hidden;
+  transition: box-shadow var(--avantex-extras-transition), transform var(--avantex-extras-transition);
+}
+
+.avantex-extras-card:hover {
+  box-shadow: var(--avantex-extras-shadow-hover);
+  transform: translateY(-3px);
+}
+
+/* Card image */
+.avantex-extras-card__img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background: var(--avantex-extras-light);
+  border-bottom: 1px solid var(--avantex-extras-border);
+  min-height: 120px;
+}
+
+.avantex-extras-card__img img {
+  max-width: 128px;
+  max-height: 128px;
+  border-radius: 16px;
+}
+
+.avantex-extras-card__img--theme {
+  padding: 0;
+  min-height: auto;
+}
+
+.avantex-extras-card__img--theme img {
+  width: 100%;
+  max-width: none;
+  max-height: none;
+  border-radius: 0;
+  display: block;
+}
+
+/* Card body */
+.avantex-extras-card__body {
+  flex: 1;
+  padding: 20px;
+}
+
+.avantex-extras-card__title {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--avantex-extras-dark);
+  margin: 0 0 8px;
+}
+
+.avantex-extras-card__desc {
+  font-size: 18px;
+  color: var(--avantex-extras-text);
+  line-height: 1.5;
+  margin: 8px 0 12px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.avantex-extras-card__parent {
+  font-size: 16px;
+  color: var(--avantex-extras-text);
+  margin: 4px 0 8px;
+}
+
+.avantex-extras-card__meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  font-size: 16px;
+  color: var(--avantex-extras-text);
+}
+
+.avantex-extras-card__meta strong {
+  color: var(--avantex-extras-dark);
+}
+
+/* Card footer */
+.avantex-extras-card__footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 14px 20px;
+  border-top: 1px solid var(--avantex-extras-border);
+  background: var(--avantex-extras-light);
+}
+
+.avantex-extras-card__updated {
+  font-size: 16px;
+  color: #999;
+}
+
+.avantex-extras-card__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+/* ─── Star ratings ─── */
+.avantex-stars {
+  display: inline-flex;
+  gap: 1px;
+  color: var(--avantex-extras-star);
+  margin-bottom: 4px;
+}
+
+.avantex-stars .dashicons {
+  font-size: 18px;
+  width: 18px;
+  height: 18px;
+}
+
+/* ─── Buttons ─── */
+.avantex-extras-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 7px 16px;
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background var(--avantex-extras-transition), transform 0.15s ease;
+  color: #fff;
+  background: var(--avantex-extras-dark);
+  line-height: 1.4;
+  white-space: nowrap;
+}
+
+.avantex-extras-btn:hover {
+  background: #2a283d;
+  transform: translateY(-1px);
+  color: #fff;
+}
+
+.avantex-extras-btn:disabled {
+  cursor: default;
+  opacity: 0.85;
+  transform: none;
+}
+
+.avantex-extras-btn--success,
+.avantex-extras-btn--success:hover {
+  background: var(--avantex-extras-success);
+  color: #fff;
+}
+
+.avantex-extras-btn--loading {
+  position: relative;
+  pointer-events: none;
+}
+
+.avantex-extras-btn--loading::after {
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin-left: 8px;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  border-top-color: #fff;
+  border-radius: 50%;
+  animation: avantex-spin 0.6s linear infinite;
+}
+
+@keyframes avantex-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Demo / Buy variants */
+.avantex-extras-btn--demo {
+  background: var(--avantex-extras-demo-bg);
+}
+
+.avantex-extras-btn--demo:hover {
+  background: linear-gradient(135deg, #060534, #222087);
+  color: #fff;
+}
+
+.avantex-extras-btn--buy {
+  background: var(--avantex-extras-buy-bg);
+}
+
+.avantex-extras-btn--buy:hover {
+  background: linear-gradient(135deg, #b74c42, #5b011e);
+  color: #fff;
+}
+
+/* ─── Responsive ─── */
+@media (max-width: 782px) {
+  .avantex-extras-header h1 {
+    font-size: 28px;
+  }
+
+  .avantex-extras-subtitle {
+    font-size: 15px;
+  }
+
+  .avantex-extras-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .avantex-extras-card__footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .avantex-extras-card__actions {
+    width: 100%;
+  }
+
+  .avantex-extras-card__actions .avantex-extras-btn {
+    flex: 1;
+    text-align: center;
+  }
+}

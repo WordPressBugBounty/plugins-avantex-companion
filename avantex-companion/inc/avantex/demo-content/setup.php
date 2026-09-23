@@ -17,6 +17,7 @@ if ( ! function_exists( 'avantex_starter_sites_import_files' ) ) {
 
 		// Check if a specific child theme is activated.
 		$activated_child_themes = array(
+			'ReAvantex',
 			'Avantex Business',
 			'Avantex Market',
 			'Avantex Automobile',
@@ -136,6 +137,10 @@ if ( ! function_exists( 'avantex_starter_sites_after_import_mods' ) ) {
 		$import_file_name = $selected_import['import_file_name'];
 
 		switch ( $import_file_name ) {
+			case 'ReAvantex':
+				$menu_name        = 'Primary Menu';
+				$front_page_title = 'Home';
+				break;
 			case 'Avantex Business':
 				$menu_name        = 'Avantex Business Menu';
 				$front_page_title = 'Business Home';
