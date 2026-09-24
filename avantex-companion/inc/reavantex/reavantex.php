@@ -14,7 +14,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 if ( ! defined( 'AVANTEX_COMPANION_VERSION' ) ) {
-	define( 'AVANTEX_COMPANION_VERSION', '0.2.6' );
+	define( 'AVANTEX_COMPANION_VERSION', '0.2.7' );
 }
 if ( ! defined( 'AVANTEX_COMPANION_REAVANTEX_DIR' ) ) {
 	define( 'AVANTEX_COMPANION_REAVANTEX_DIR', AVANTEX_COMPANION_PLUGIN_DIR . 'inc/reavantex/' );

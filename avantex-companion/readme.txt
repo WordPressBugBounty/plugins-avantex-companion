@@ -3,9 +3,9 @@ Contributors: FARAZFRANK
 Tags: frontpage, theme page, featured, widgets, admin, companion, homepage, WordPress frontpage, template, theme builder, page builder
 PHP Requires at least: 4.0
 Tested up to: 7.1.2
-Stable tag: 0.2.6
+Stable tag: 0.2.7
 Requires PHP: 7.4 
-tested up to 6.8
+PHP Tested up to: 8.4
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -21,6 +21,11 @@ The plugin options are user-friendly and you can use this plugin for all avantex
 Have any queries?
 
 == Changelog ==
+* Version: 	0.2.7
+	* Updated WordPress Tested up to 7.1.2 and PHP Tested up to 8.4.
+	* Enhanced Avantex Blog Template with dynamic layout, column controls, and sidebar fallback bridging.
+	* Improved pagination calculation and query parameters handling.
+
 * Version: 	0.2.6
 	* Integrated native custom demo importer, exporter, and extras modules for ReAvantex child theme.
 	* Added dedicated ReAvantex Services and Footer menu generation.

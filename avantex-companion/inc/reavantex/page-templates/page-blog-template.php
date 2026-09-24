@@ -17,15 +17,30 @@ get_header();
 	// Load Customizer Settings.
 	$layout          = get_theme_mod( 'avantex-blog-template-layout', 'grid' );
 	$columns         = get_theme_mod( 'avantex-blog-template-columns', '3' );
-	$sidebar_pos     = get_theme_mod( 'avantex-blog-template-sidebar', 'right-sidebar' );
-	$container_class = get_theme_mod( 'avantex-blog-template-container', 'container' );
-	$posts_per_page  = get_theme_mod( 'avantex-blog-template-posts-per-page', '9' );
+	$sidebar_pos_raw = get_theme_mod( 'avantex-blog-template-sidebar', '' );
+
+	if ( ! empty( $sidebar_pos_raw ) ) {
+		$sidebar_pos = $sidebar_pos_raw;
+	} else {
+		$parent_sidebar = get_theme_mod( 'avantex-blogs-land-sidebar', 'sidebarright' );
+		if ( 'sidebarnone' === $parent_sidebar ) {
+			$sidebar_pos = 'none-sidebar';
+		} elseif ( 'sidebarleft' === $parent_sidebar ) {
+			$sidebar_pos = 'left-sidebar';
+		} else {
+			$sidebar_pos = 'right-sidebar';
+		}
+	}
+
+	$container_class = get_theme_mod( 'avantex-blog-template-container', get_theme_mod( 'avantex-blogs-land-size', 'container' ) );
+	$posts_per_page_raw = get_theme_mod( 'avantex-blog-template-posts-per-page', '9' );
+	$posts_per_page     = ( ! empty( $posts_per_page_raw ) && is_numeric( $posts_per_page_raw ) && intval( $posts_per_page_raw ) > 0 ) ? intval( $posts_per_page_raw ) : 9;
 
 	$my_paged = max( 1, get_query_var( 'paged' ), get_query_var( 'page' ) );
 
 	$args = array(
 		'post_type'           => 'post',
-		'posts_per_page'      => intval( $posts_per_page ),
+		'posts_per_page'      => $posts_per_page,
 		'paged'               => $my_paged,
 		'ignore_sticky_posts' => true,
 	);

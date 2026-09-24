@@ -7,14 +7,14 @@ if ( ! defined( 'ABSPATH' ) ) {
 * Plugin Name:  Avantex Companion
 * Plugin URI:   https://wordpress.org/plugins/avantex-companion
 * Description:  Avantex Companion plugin provides themes extra settings for theme avantex.
-* Version:      0.2.6
+* Version:      0.2.7
 * Author:       FARAZFRANK
 * Author URI:   https://avantex.com/
 * Tested up to: 7.1.2
 * Requires:     4.0 or higher
 * License:      GPLv3 or later
 * License URI:  http://www.gnu.org/licenses/gpl-3.0.html
-* Requires PHP: 4.0 tested up to 8.0.26
+* Requires PHP: 7.4 tested up to 8.4
 * Text Domain:  avantex-companion
 * Domain Path:  /languages
 */
@@ -35,7 +35,7 @@ along with Avantex Companion. If not, see http://www.gnu.org/licenses/gpl-3.0.ht
 */
 
 if ( ! defined( 'AVANTEX_COMPANION_VERSION' ) ) {
-	define( 'AVANTEX_COMPANION_VERSION', '0.2.6' );
+	define( 'AVANTEX_COMPANION_VERSION', '0.2.7' );
 }
 define( 'AVANTEX_COMPANION_PLUGIN_URL', plugin_dir_url( __FILE__ ) );
 define( 'AVANTEX_COMPANION_PLUGIN_DIR', plugin_dir_path( __FILE__ ) );
@@ -77,4 +77,3 @@ function avantex_companion_activate() {
 	Avantex_Companion_Activator::activate();
 }
 register_activation_hook( __FILE__, 'avantex_companion_activate' );
-
