@@ -14,7 +14,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 if ( ! defined( 'AVANTEX_COMPANION_VERSION' ) ) {
-	define( 'AVANTEX_COMPANION_VERSION', '0.2.7' );
+	define( 'AVANTEX_COMPANION_VERSION', '0.2.8' );
 }
 if ( ! defined( 'AVANTEX_COMPANION_REAVANTEX_DIR' ) ) {
 	define( 'AVANTEX_COMPANION_REAVANTEX_DIR', AVANTEX_COMPANION_PLUGIN_DIR . 'inc/reavantex/' );
@@ -150,7 +150,6 @@ function avantex_companion_register_reavantex_page_templates( $templates ) {
 		'reavantex-companion/page-about-us.php'         => __( 'Avantex About-US', 'avantex-companion' ),
 		'reavantex-companion/page-services.php'         => __( 'Avantex Services', 'avantex-companion' ),
 		'reavantex-companion/page-portfolio.php'        => __( 'Avantex Portfolio', 'avantex-companion' ),
-		'reavantex-companion/page-case-study.php'       => __( 'Avantex Case Study', 'avantex-companion' ),
 		'reavantex-companion/page-faq.php'              => __( 'Avantex FAQ', 'avantex-companion' ),
 		'reavantex-companion/page-contact-us.php'       => __( 'Avantex Contact-US', 'avantex-companion' ),
 		'reavantex-companion/page-privacy-policy.php'   => __( 'Avantex Privacy Policy', 'avantex-companion' ),
@@ -183,7 +182,6 @@ function avantex_companion_load_reavantex_page_template( $template ) {
 		'templates/avantex-about-us.php'         => 'page-about-us.php',
 		'templates/avantex-services.php'         => 'page-services.php',
 		'templates/avantex-portfolio.php'        => 'page-portfolio.php',
-		'templates/avantex-case-study.php'       => 'page-case-study.php',
 		'templates/avantex-faq.php'              => 'page-faq.php',
 		'templates/avantex-contact-us.php'       => 'page-contact-us.php',
 		'templates/avantex-privacy-policy.php'   => 'page-privacy-policy.php',
@@ -201,6 +199,66 @@ function avantex_companion_load_reavantex_page_template( $template ) {
 	return $template;
 }
 add_filter( 'template_include', 'avantex_companion_load_reavantex_page_template' );
+
+/**
+ * Register ReAvantex Template Settings in Customizer via Companion Plugin.
+ *
+ * @param WP_Customize_Manager $wp_customize Customizer manager instance.
+ */
+function reavantex_companion_customize_register( $wp_customize ) {
+	$theme_dir = get_stylesheet_directory();
+
+	// Safely ensure custom controls from the theme are loaded.
+	if ( ! class_exists( 'Skyrocket_Custom_Control' ) && file_exists( $theme_dir . '/customizer-custom-controls-master/inc/custom-controls.php' ) ) {
+		require_once $theme_dir . '/customizer-custom-controls-master/inc/custom-controls.php';
+	}
+	if ( ! class_exists( 'Customizer_Repeater' ) && file_exists( $theme_dir . '/customizer-controls-master/customizer-repeater/class/class-customizer-repeater.php' ) ) {
+		require_once $theme_dir . '/customizer-controls-master/customizer-repeater/class/class-customizer-repeater.php';
+	}
+	if ( ! class_exists( 'Customizer_Page_Editor' ) && file_exists( $theme_dir . '/customizer-controls-master/customizer-page-editor/class/class-customizer-page-editor.php' ) ) {
+		require_once $theme_dir . '/customizer-controls-master/customizer-page-editor/class/class-customizer-page-editor.php';
+	}
+
+	if ( ! class_exists( 'Skyrocket_Simple_Notice_Custom_control' ) ) {
+		return;
+	}
+
+	// Ensure the templates panel exists.
+	if ( ! $wp_customize->get_panel( 'avantex-templates-panel' ) ) {
+		$wp_customize->add_panel(
+			'avantex-templates-panel',
+			array(
+				'title'       => __( 'Avantex Templates Settings', 'avantex-companion' ),
+				'priority'    => 4,
+				'description' => __( 'All avantex templates related settings', 'avantex-companion' ),
+			)
+		);
+	}
+
+	$custom_template_dir = AVANTEX_COMPANION_REAVANTEX_DIR . 'custom-template/';
+	if ( file_exists( $custom_template_dir . 'custom-about-us.php' ) ) {
+		require $custom_template_dir . 'custom-about-us.php';
+	}
+	if ( file_exists( $custom_template_dir . 'custom-services.php' ) ) {
+		require $custom_template_dir . 'custom-services.php';
+	}
+	if ( file_exists( $custom_template_dir . 'custom-portfolio.php' ) ) {
+		require $custom_template_dir . 'custom-portfolio.php';
+	}
+	if ( file_exists( $custom_template_dir . 'custom-faq.php' ) ) {
+		require $custom_template_dir . 'custom-faq.php';
+	}
+	if ( file_exists( $custom_template_dir . 'custom-contact-us.php' ) ) {
+		require $custom_template_dir . 'custom-contact-us.php';
+	}
+	if ( file_exists( $custom_template_dir . 'custom-privacy-policy.php' ) ) {
+		require $custom_template_dir . 'custom-privacy-policy.php';
+	}
+	if ( file_exists( $custom_template_dir . 'custom-terms-of-service.php' ) ) {
+		require $custom_template_dir . 'custom-terms-of-service.php';
+	}
+}
+add_action( 'customize_register', 'reavantex_companion_customize_register', 25 );
 
 /**
  * Trigger default setup upon plugin activation if ReAvantex is the active theme.

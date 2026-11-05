@@ -13,72 +13,73 @@ if ( ! defined( 'ABSPATH' ) ) {
 // Google Font Outfit & Inter for high-end typography.
 wp_enqueue_style( 'google-font-outfit-inter', 'https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@400;600;700;800&display=swap', array(), AVANTEX_COMPANION_VERSION );
 
-$demo_uri = AVANTEX_COMPANION_PLUGIN_URL . "inc/avantex";
-$demos    = array(
+$demo_screenshots_url = AVANTEX_COMPANION_REAVANTEX_URL . 'assets/images/demo-screenshots';
+$demos                = array(
 	array(
 		'name'       => esc_html__( 'Avantex Business', 'avantex' ),
 		'slug'       => 'avantex-business',
 		'category'   => 'free',
-		'preview'    => 'https://wpfrank.com/demo/avantex-business',
-		'screenshot' => $demo_uri . '/img/demo-screenshots/avantex-business.webp',
+		'preview'    => 'https://wpfrank.com/demo/reavantex-business',
+		'screenshot' => $demo_screenshots_url . '/reavantex-business.webp',
 	),
 	array(
 		'name'       => esc_html__( 'Avantex Market', 'avantex' ),
 		'slug'       => 'avantex-market',
 		'category'   => 'free',
-		'preview'    => 'https://wpfrank.com/demo/avantex-market-pro/',
-		'screenshot' => $demo_uri . '/img/demo-screenshots/avantex-market.webp',
+		'preview'    => 'https://wpfrank.com/demo/reavantex-market/',
+		'screenshot' => $demo_screenshots_url . '/reavantex-market.webp',
 	),
 	array(
 		'name'       => esc_html__( 'Avantex Pro', 'avantex' ),
 		'slug'       => 'avantex-pro',
 		'category'   => 'pro',
-		'preview'    => 'https://wpfrank.com/demo/avantex-pro',
-		'screenshot' => $demo_uri . '/img/demo-screenshots/avantex-pro.webp',
+		'preview'    => 'https://wpfrank.com/demo/reavantex-pro',
+		'screenshot' => $demo_screenshots_url . '/reavantex-pro.webp',
 	),
 	array(
 		'name'       => esc_html__( 'Avantex Automobile', 'avantex' ),
 		'slug'       => 'avantex-automobile',
 		'category'   => 'pro',
 		'preview'    => 'https://wpfrank.com/demo/avantex-automobile-pro/',
-		'screenshot' => $demo_uri . '/img/demo-screenshots/avantex-automobile.webp',
+		'screenshot' => $demo_screenshots_url . '/reavantex-automobile.webp',
 	),
 	array(
 		'name'       => esc_html__( 'Avantex Yoga', 'avantex' ),
 		'slug'       => 'avantex-yoga',
 		'category'   => 'pro',
 		'preview'    => 'https://wpfrank.com/demo/avantex-yoga-pro/',
-		'screenshot' => $demo_uri . '/img/demo-screenshots/avantex-yoga.webp',
+		'screenshot' => $demo_screenshots_url . '/reavantex-yoga.webp',
 	),
 	array(
 		'name'       => esc_html__( 'Avantex Metaverse', 'avantex' ),
 		'slug'       => 'avantex-metaverse',
 		'category'   => 'pro',
 		'preview'    => 'https://wpfrank.com/demo/avantex-metaverse-pro/',
-		'screenshot' => $demo_uri . '/img/demo-screenshots/avantex-metaverse.webp',
+		'screenshot' => $demo_screenshots_url . '/reavantex-metaverse.webp',
 	),
 	array(
 		'name'       => esc_html__( 'Avantex Medical', 'avantex' ),
 		'slug'       => 'avantex-medical',
 		'category'   => 'pro',
 		'preview'    => 'https://wpfrank.com/demo/avantex-medical-pro/',
-		'screenshot' => $demo_uri . '/img/demo-screenshots/avantex-medical.webp',
+		'screenshot' => $demo_screenshots_url . '/reavantex-medical.webp',
 	),
 	array(
 		'name'       => esc_html__( 'Avantex Construction', 'avantex' ),
 		'slug'       => 'avantex-construction',
 		'category'   => 'pro',
 		'preview'    => 'https://wpfrank.com/demo/avantex-construction-pro/',
-		'screenshot' => $demo_uri . '/img/demo-screenshots/avantex-construction.webp',
+		'screenshot' => $demo_screenshots_url . '/reavantex-construction.webp',
 	),
 	array(
 		'name'       => esc_html__( 'Avantex Education', 'avantex' ),
 		'slug'       => 'avantex-education',
 		'category'   => 'pro',
 		'preview'    => 'https://wpfrank.com/demo/avantex-education-pro/',
-		'screenshot' => $demo_uri . '/img/demo-screenshots/avantex-education.webp',
+		'screenshot' => $demo_screenshots_url . '/reavantex-education.webp',
 	),
 );
+$is_pro_active = ( function_exists( 'reavantex_is_pro' ) && reavantex_is_pro() ) || ( defined( 'REAVANTEX_IS_PRO' ) && REAVANTEX_IS_PRO ) || class_exists( 'Reavantex_Pro_Plugin' );
 ?>
 
 <div class="avantex-importer-wrap">
@@ -114,26 +115,42 @@ $demos    = array(
 
 	<!-- Dynamic Demo Grid -->
 	<main class="demo-grid">
-		<?php foreach ( $demos as $demo ) : ?>
-			<article class="demo-card" data-slug="<?php echo esc_attr( $demo['slug'] ); ?>" data-category="<?php echo esc_attr( $demo['category'] ); ?>">
+		<?php
+		foreach ( $demos as $demo ) :
+			$is_locked = ( 'pro' === $demo['category'] && ! $is_pro_active );
+			$card_classes = 'demo-card' . ( $is_locked ? ' demo-card--locked' : '' );
+			?>
+			<article class="<?php echo esc_attr( $card_classes ); ?>" data-slug="<?php echo esc_attr( $demo['slug'] ); ?>" data-category="<?php echo esc_attr( $demo['category'] ); ?>" data-locked="<?php echo $is_locked ? 'true' : 'false'; ?>">
 				<div class="card-screenshot">
 					<img src="<?php echo esc_url( $demo['screenshot'] ); ?>" alt="<?php echo esc_attr( $demo['name'] ); ?>" loading="lazy" />
-					<div class="card-overlay">
-						<a href="<?php echo esc_url( $demo['preview'] ); ?>" class="btn btn-preview" target="_blank">
-							<span class="dashicons dashicons-visibility"></span> <?php esc_html_e( 'Live Preview', 'avantex' ); ?>
-						</a>
-					</div>
 					<!-- Category Badge -->
 					<span class="category-badge badge-<?php echo esc_attr( $demo['category'] ); ?>">
+						<?php if ( $is_locked ) : ?>
+							<span class="dashicons dashicons-lock" style="font-size: 11px; width: 11px; height: 11px; line-height: 11px; vertical-align: middle; margin-right: 2px;"></span>
+						<?php endif; ?>
 						<?php echo esc_html( ucfirst( $demo['category'] ) ); ?>
 					</span>
 				</div>
 				<div class="card-body">
 					<h3><?php echo esc_html( $demo['name'] ); ?></h3>
 					<div class="card-footer-buttons">
-						<button class="btn btn-import button-primary" data-slug="<?php echo esc_attr( $demo['slug'] ); ?>" data-name="<?php echo esc_attr( $demo['name'] ); ?>">
-							<span class="dashicons dashicons-download"></span> <?php esc_html_e( 'Import Demo', 'avantex' ); ?>
-						</button>
+						<a href="<?php echo esc_url( $demo['preview'] ); ?>" class="btn btn-preview" target="_blank" rel="noopener noreferrer">
+							<span class="dashicons dashicons-visibility"></span> <?php esc_html_e( 'Live Preview', 'avantex' ); ?>
+						</a>
+						<?php if ( $is_locked ) : ?>
+							<?php
+							$upgrade_url = function_exists( 'reavantex_get_pro_url' )
+								? reavantex_get_pro_url( 'demo-import', $demo['slug'] )
+								: 'https://wpfrank.com/wordpress-themes/reavantex-pro/';
+							?>
+							<a href="<?php echo esc_url( $upgrade_url ); ?>" target="_blank" rel="noopener noreferrer" class="btn btn-upgrade-pro">
+								<span class="dashicons dashicons-lock"></span> <?php esc_html_e( 'Upgrade to Pro', 'avantex' ); ?>
+							</a>
+						<?php else : ?>
+							<button class="btn btn-import" data-slug="<?php echo esc_attr( $demo['slug'] ); ?>" data-name="<?php echo esc_attr( $demo['name'] ); ?>">
+								<span class="dashicons dashicons-download"></span> <?php esc_html_e( 'Import Demo', 'avantex' ); ?>
+							</button>
+						<?php endif; ?>
 					</div>
 				</div>
 			</article>

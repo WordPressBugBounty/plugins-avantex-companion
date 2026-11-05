@@ -83,12 +83,6 @@ function reavantex_companion_setup_default_pages() {
 			'template' => 'reavantex-companion/page-terms-of-service.php',
 			'content'  => $default_terms_content,
 		),
-		array(
-			'title'    => __( 'Case Study', 'avantex-companion' ),
-			'slug'     => 'case-study',
-			'template' => 'reavantex-companion/page-case-study.php',
-			'content'  => '',
-		),
 	);
 
 	$page_ids = array();

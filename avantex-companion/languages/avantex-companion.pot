@@ -739,11 +739,6 @@ msgstr ""
 msgid "Portfolio"
 msgstr ""
 
-#: inc/reavantex/default-content.php:59
-#: inc/reavantex/page-templates/page-case-study.php:39
-msgid "Case Study"
-msgstr ""
-
 #: inc/reavantex/default-content.php:65
 #: inc/reavantex/default-content.php:168
 #: inc/reavantex/page-templates/page-faq.php:15
@@ -817,34 +812,6 @@ msgstr ""
 msgid "Optimizing Performance and Core Web Vitals for E-Commerce Platforms"
 msgstr ""
 
-#: inc/reavantex/page-templates/page-case-study.php:22
-msgid "Featured Project"
-msgstr ""
-
-#: inc/reavantex/page-templates/page-case-study.php:58
-msgid "Featured Project Overview"
-msgstr ""
-
-#: inc/reavantex/page-templates/page-case-study.php:59
-msgid "Portfolio Showcase"
-msgstr ""
-
-#: inc/reavantex/page-templates/page-case-study.php:62
-msgid "Enterprise Client"
-msgstr ""
-
-#: inc/reavantex/page-templates/page-case-study.php:68
-msgid "Consolidated complex user workflows into an intuitive interface, eliminating cognitive load and task friction."
-msgstr ""
-
-#: inc/reavantex/page-templates/page-case-study.php:69
-msgid "Designed a modern component system with real-time data flow, clear visual hierarchy, and fast page load speeds."
-msgstr ""
-
-#: inc/reavantex/page-templates/page-case-study.php:70
-msgid "Delivered outstanding user adoption lift, reduced task completion times by 45%, and achieved 99% client satisfaction."
-msgstr ""
-
 #: inc/reavantex/page-templates/page-faq.php:16
 msgid "Frequently Asked Questions"
 msgstr ""
@@ -862,7 +829,7 @@ msgid "We are here to help. Reach out to our team for personalized assistance."
 msgstr ""
 
 #: inc/reavantex/page-templates/page-portfolio.php:18
-msgid "Portfolio & Case Studies"
+msgid "Portfolio & Projects"
 msgstr ""
 
 #: inc/reavantex/page-templates/page-portfolio.php:19
@@ -890,7 +857,7 @@ msgid "Featured Works"
 msgstr ""
 
 #: inc/reavantex/page-templates/page-portfolio.php:47
-msgid "Our Projects & Case Studies"
+msgid "Our Featured Projects"
 msgstr ""
 
 #: inc/reavantex/page-templates/page-portfolio.php:69
@@ -1002,10 +969,6 @@ msgstr ""
 
 #: inc/reavantex/reavantex.php:126
 msgid "Avantex Portfolio"
-msgstr ""
-
-#: inc/reavantex/reavantex.php:127
-msgid "Avantex Case Study"
 msgstr ""
 
 #: inc/reavantex/reavantex.php:128

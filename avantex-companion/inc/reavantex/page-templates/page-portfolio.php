@@ -15,7 +15,7 @@ $portfolio_grid_class      = get_theme_mod( 'avantex-portfoliopage-grid', 'col-l
 $portfolio_show_hero       = get_theme_mod( 'avantex-portfoliopage-show-hero', 1 );
 $hero_layout               = get_theme_mod( 'avantex-portfoliopage-hero-layout', 'layout_light' );
 
-$hero_subtitle = get_theme_mod( 'avantex-portfoliopage-hero-subtitle', __( 'Portfolio & Case Studies', 'avantex' ) );
+$hero_subtitle = get_theme_mod( 'avantex-portfoliopage-hero-subtitle', __( 'Portfolio & Projects', 'avantex' ) );
 $hero_title    = get_theme_mod( 'avantex-portfoliopage-hero-title', __( 'Innovative Projects Built with Excellence', 'avantex' ) );
 $hero_desc     = get_theme_mod( 'avantex-portfoliopage-hero-desc', __( 'Explore our collection of successful projects and digital products. We work closely with our clients to transform ideas into robust, high-performing solutions.', 'avantex' ) );
 
@@ -26,10 +26,7 @@ $viewer_desc     = get_theme_mod( 'avantex-portfolio-viewer-desc', __( 'Viewing 
 
 // Fetch Repeater (Manage Portfolio items).
 $portfolio_default = defined( 'REAVANTEX_PORTFOLIO_DEFAULTS' ) ? REAVANTEX_PORTFOLIO_DEFAULTS : '[]';
-$cards_data        = get_theme_mod( 'avantex-portfoliopage-repeater' );
-if ( empty( $cards_data ) ) {
-	$cards_data = get_theme_mod( 'avantex-casestudies-repeater', $portfolio_default );
-}
+$cards_data        = get_theme_mod( 'avantex-portfoliopage-repeater', $portfolio_default );
 $decoded_cards = ! empty( $cards_data ) ? json_decode( $cards_data ) : array();
 if ( is_array( $decoded_cards ) ) {
 	$decoded_cards = apply_filters( 'reavantex_pro_portfolio_items', $decoded_cards );
@@ -51,7 +48,7 @@ if ( empty( $breakdown_details ) || ! is_array( $breakdown_details ) ) {
 // Grid section titles and toggle.
 $show_grid     = get_theme_mod( 'avantex-portfoliopage-show-grid', 1 );
 $grid_subtitle = get_theme_mod( 'avantex-portfoliopage-subtitle', __( 'Featured Works', 'avantex' ) );
-$grid_title    = get_theme_mod( 'avantex-portfoliopage-title', __( 'Our Projects & Case Studies', 'avantex' ) );
+$grid_title    = get_theme_mod( 'avantex-portfoliopage-title', __( 'Our Featured Projects', 'avantex' ) );
 
 // Combine into unified Projects dataset.
 $projects_dataset = array();

@@ -62,6 +62,13 @@ jQuery(document).ready(function($) {
 		e.preventDefault();
 
 		var $btn = $(this);
+		var $card = $btn.closest('.demo-card');
+
+		// Guard against locked Pro demos.
+		if ($card.data('locked') === true || $card.data('locked') === 'true') {
+			return;
+		}
+
 		activeDemoSlug = $btn.data('slug');
 		activeDemoName = $btn.data('name');
 		isManualUpload = false;
@@ -558,6 +565,13 @@ jQuery(document).ready(function($) {
 		e.preventDefault();
 
 		var $btn = $(this);
+		var $card = $btn.closest('.demo-card');
+
+		// Guard against locked Pro demos.
+		if ($card.data('locked') === true || $card.data('locked') === 'true') {
+			return;
+		}
+
 		var slug = $btn.data('slug');
 		var name = $btn.data('name');
 

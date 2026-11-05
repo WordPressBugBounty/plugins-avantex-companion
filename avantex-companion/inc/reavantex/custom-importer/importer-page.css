@@ -148,7 +148,7 @@
 .demo-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 35px;
+  gap: 20px;
 }
 
 .demo-card {
@@ -171,7 +171,7 @@
 .card-screenshot {
   position: relative;
   overflow: hidden;
-  padding-top: 68%;
+  padding-top: 100%;
   background: #f4f6fa;
 }
 
@@ -182,27 +182,13 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: top;
   transition: transform 0.6s ease;
 }
 
-.demo-card:hover .card-screenshot img {
-  transform: scale(1.05);
-}
-
+/* Card Overlay removed - Screenshots remain crisp and unobstructed */
 .card-overlay {
-  position: absolute;
-  inset: 0;
-  background: rgba(15, 13, 29, 0.5);
-  opacity: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: opacity 0.3s ease;
-  backdrop-filter: blur(4px);
-}
-
-.card-screenshot:hover .card-overlay {
-  opacity: 1;
+  display: none;
 }
 
 .category-badge {
@@ -228,25 +214,31 @@
 }
 
 .card-body {
-  padding: 30px;
+  padding: 22px 20px 20px;
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   flex-grow: 1;
+  background: transparent;
 }
 
 .card-body h3 {
   font-family: 'Outfit', sans-serif;
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 700;
-  margin: 0 0 22px 0;
+  margin: 0 0 18px 0;
   color: var(--text-primary);
+  line-height: 1.3;
 }
 
 .card-footer-buttons {
   display: flex;
-  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  width: 100%;
+  background: transparent;
 }
 
 /* Button Styles */
@@ -265,35 +257,93 @@
   border: none;
 }
 
-.btn-preview {
-  background: #ffffff;
+/* Minimal Card Buttons (Side-by-Side) */
+.card-footer-buttons .btn {
+  flex: 1 1 0;
+  min-width: 0;
+  padding: 9px 12px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 1.3;
+  letter-spacing: 0.2px;
+  box-shadow: none;
+  border: 1px solid transparent;
+  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease, transform 0.15s ease, box-shadow 0.2s ease;
+  white-space: nowrap;
+}
+
+.card-footer-buttons .btn .dashicons {
+  font-size: 15px;
+  width: 15px;
+  height: 15px;
+  line-height: 15px;
+  vertical-align: middle;
+  margin: 0;
+}
+
+/* 1. Minimal Live Preview Button (Displays First) */
+.card-footer-buttons .btn-preview {
+  background: transparent;
   color: var(--text-primary);
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border: 1px solid #d8dce6;
+  box-shadow: none;
 }
 
-.btn-preview:hover {
-  transform: scale(1.05);
-  background: var(--dark-bg);
+.card-footer-buttons .btn-preview:hover,
+.card-footer-buttons .btn-preview:focus {
+  background: #f4f6fa;
+  border-color: #b8c0d1;
+  color: var(--text-primary);
+  transform: translateY(-1px);
+}
+
+/* 2. Minimal Import Demo Button */
+.card-footer-buttons .btn-import {
+  background: #3c72fc;
   color: #ffffff;
+  border: 1px solid #3c72fc;
+  box-shadow: none;
+  width: auto;
 }
 
-.btn-import {
-  background: var(--primary-gradient);
+.card-footer-buttons .btn-import:hover,
+.card-footer-buttons .btn-import:focus {
+  background: #285ee8;
+  border-color: #285ee8;
   color: #ffffff;
-  width: 100%;
-  box-shadow: 0 6px 20px rgba(60, 114, 252, 0.25);
+  transform: translateY(-1px);
+  box-shadow: 0 2px 6px rgba(60, 114, 252, 0.2);
 }
 
-.btn-import:hover {
-  box-shadow: 0 8px 25px rgba(60, 114, 252, 0.4);
-  transform: translateY(-2px);
+/* 3. Minimal Upgrade to Pro Button */
+.card-footer-buttons .btn-upgrade-pro {
+  background: #f59e0b;
+  color: #ffffff;
+  border: 1px solid #f59e0b;
+  font-weight: 600;
+  box-shadow: none;
+  width: auto;
+  text-decoration: none;
 }
 
-.btn-import .dashicons {
-  font-size: 18px;
-  width: 18px;
-  height: 18px;
+.card-footer-buttons .btn-upgrade-pro:hover,
+.card-footer-buttons .btn-upgrade-pro:focus {
+  background: #d97706;
+  border-color: #d97706;
+  color: #ffffff;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 6px rgba(217, 119, 6, 0.2);
+  text-decoration: none;
 }
+
+.demo-card--locked .badge-pro {
+  background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+}
+
 
 /* Immersive Dark Glassmorphism Progress Modal Overlay */
 .avantex-import-overlay {
@@ -721,6 +771,15 @@
     margin: 0 0 14px 0;
   }
 
+  .card-footer-buttons {
+    gap: 8px;
+  }
+
+  .card-footer-buttons .btn {
+    padding: 8px 8px;
+    font-size: 12px;
+  }
+
   .category-badge {
     top: 10px;
     left: 10px;
@@ -837,6 +896,17 @@
 
   .card-body h3 {
     font-size: 16px;
+  }
+
+  .card-footer-buttons {
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .card-footer-buttons .btn {
+    width: 100%;
+    padding: 8px 10px;
+    font-size: 12px;
   }
 
   .btn {

@@ -13,7 +13,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 if ( ! defined( 'AVANTEX_COMPANION_VERSION' ) ) {
-	define( 'AVANTEX_COMPANION_VERSION', '0.2.7' );
+	define( 'AVANTEX_COMPANION_VERSION', '0.2.8' );
 }
 
 // Ensure the core WordPress upgrader class is loaded for our silent skin subclass.
@@ -134,6 +134,7 @@ class Reavantex_Demo_Importer {
 			array(
 				'ajaxUrl'  => admin_url( 'admin-ajax.php' ),
 				'security' => wp_create_nonce( 'avantex-importer-nonce' ),
+				'isPro'    => self::is_pro_active(),
 				'messages' => array(
 					'plugins'    => esc_html__( 'Installing and activating required plugins...', 'avantex' ),
 					'xml_start'  => esc_html__( 'Connecting to raw GitHub CDN and parsing XML content...', 'avantex' ),
@@ -147,6 +148,27 @@ class Reavantex_Demo_Importer {
 				),
 			)
 		);
+	}
+
+	/**
+	 * Check if ReAvantex Pro is active.
+	 *
+	 * @return bool True if Pro is active, false otherwise.
+	 */
+	public static function is_pro_active() {
+		return (bool) ( ( function_exists( 'reavantex_is_pro' ) && reavantex_is_pro() ) || ( defined( 'REAVANTEX_IS_PRO' ) && REAVANTEX_IS_PRO ) || class_exists( 'Reavantex_Pro_Plugin' ) );
+	}
+
+	/**
+	 * Check if a given demo slug is a Pro demo.
+	 * Only the first two demos ('avantex-business' and 'avantex-market') are free.
+	 *
+	 * @param string $demo Demo slug.
+	 * @return bool True if Pro demo, false if free.
+	 */
+	public static function is_pro_demo( $demo ) {
+		$free_demos = array( 'avantex-business', 'avantex-market' );
+		return ! in_array( $demo, $free_demos, true );
 	}
 
 	/**
@@ -176,6 +198,10 @@ class Reavantex_Demo_Importer {
 			'avantex-education',
 		);
 		if ( in_array( $demo, $allowed_demos, true ) ) {
+			// Enforce Pro demo lock if theme is running free version.
+			if ( self::is_pro_demo( $demo ) && ! self::is_pro_active() ) {
+				return false;
+			}
 			return true;
 		}
 
@@ -256,6 +282,15 @@ class Reavantex_Demo_Importer {
 		}
 
 		$demo = isset( $_POST['demo'] ) ? sanitize_key( $_POST['demo'] ) : '';
+
+		if ( self::is_pro_demo( $demo ) && ! self::is_pro_active() ) {
+			wp_send_json_error(
+				array(
+					'message' => esc_html__( 'This demo requires ReAvantex Pro. Please upgrade to unlock all premium starter sites.', 'avantex' ),
+				)
+			);
+		}
+
 		if ( ! self::validate_demo_slug( $demo ) ) {
 			wp_send_json_error( array( 'message' => esc_html__( 'Invalid demo selected.', 'avantex' ) ) );
 		}

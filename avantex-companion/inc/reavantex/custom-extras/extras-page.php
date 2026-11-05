@@ -14,7 +14,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 if ( ! defined( 'AVANTEX_COMPANION_VERSION' ) ) {
-	define( 'AVANTEX_COMPANION_VERSION', '0.2.7' );
+	define( 'AVANTEX_COMPANION_VERSION', '0.2.8' );
 }
 
 /*
